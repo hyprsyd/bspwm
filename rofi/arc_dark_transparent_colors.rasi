@@ -4,7 +4,7 @@
  *******************************************************/
 * {
     selected-normal-foreground:  rgba ( 255, 147, 5, 100 % );
-    foreground:                  rgba ( 196, 203, 212, 100 % );
+    foreground:                  rgba (235, 219, 178, 100%);
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 45, 48, 59, 1 % );
     red:                         rgba ( 220, 50, 47, 100 % );
@@ -16,11 +16,11 @@
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 249, 249, 249, 100 % );
     alternate-active-background: rgba ( 45, 48, 59, 88 % );
-    background:                  rgba ( 45, 48, 59, 88 % );
+    background:                  rgba ( 40, 40, 40, 95 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 45, 48, 59, 1 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 24, 26, 32, 100 % );
+    selected-normal-background:  rgba ( 80, 80, 80, 100 % );
     border-color:                rgba ( 124, 131, 137, 100 % );
     spacing:                     2;
     separatorcolor:              rgba ( 45, 48, 59, 1 % );

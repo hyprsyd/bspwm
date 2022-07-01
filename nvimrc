@@ -1,9 +1,10 @@
-"let g:airline_theme='simple'
 nnoremap <space>e :CocCommand explorer<CR>
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_gruvbox_dark_hard'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 call plug#begin(stdpath('data') . '/plugged')
 " The default plugin directory will be as follows:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
@@ -16,7 +17,6 @@ call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'morhetz/gruvbox'
 
 Plug 'vim-airline/vim-airline'
 

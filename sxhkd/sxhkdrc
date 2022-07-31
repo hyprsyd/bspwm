@@ -158,11 +158,11 @@ XF86AudioMute
 
 # Brightness up
 XF86MonBrightnessUp
-  xbacklight -inc 5
+  brightnessctl s +10
 
 # And brightness down
 XF86MonBrightnessDown
-  xbacklight -dec 5
+  brightnessctl s 10-
 
 # Screenshot
 Print
@@ -173,10 +173,10 @@ super + Print
 
 # Shortcuts
 super + w 
-  google-chrome-stable
+  firefox
 
 super + v
-  code
+  alacritty -e nvim
 
 super + n
   thunar
@@ -184,11 +184,7 @@ super + n
 super + u
   jellyfinmediaplayer
 
-super + F3
- ~/.custom/brightness10.sh
-
-super + F4
- ~/.custom/brightness100.sh
-
-super + F1
-  ~/.config/bspwm/scripts/keybindings_rofi.sh
+F11
+  brightnessctl s 10-
+F12
+  brightnessctl s +10

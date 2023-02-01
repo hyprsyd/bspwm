@@ -1,7 +1,5 @@
 #! /bin/sh
 
-xinput set-prop 11 278 1                                                                                                                                                                                                              
-
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -9,7 +7,7 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 bspc config border_width         0
 bspc config window_gap           3
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config pointer_follows_focus true
@@ -31,7 +29,7 @@ bspc config active_border_color         "#073642"
 
 #
 # Autostart
-#
+xrandr --output HDMI-A-0 --mode 2560x1080 --rate 74.99;
 # Set display from arandr saved script
 sh ~/.screenlayout/monitor.sh &
 # Bar
@@ -41,14 +39,13 @@ sh ~/.screenlayout/monitor.sh &
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Wallpaper
-nitrogen --restore &
+feh --bg-fill '/home/sid/Tokyo-Night-GTK-Theme/wallpapers/tokyo-night41.png' &
 # Dex
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 # Picom
 picom &
 # Network Applet
-nm-applet --indicator &
-xflux -l 77 -k 5000 &
+nm-applet &
 # Cursor
 xsetroot -cursor_name left_ptr &
 
